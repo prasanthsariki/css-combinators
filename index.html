@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.div4{
+    background-color: black;
+    border: 5px solid black;
+    height: 100px;
+    width: 100px;
+}
+#a:hover ~ .div4{
+    background-color: orange;
+}
+#b:hover ~ .div4{
+    background-color: green;
+}
+#c:hover ~ .div4{
+    background-color: blue;
+}
+#d:hover + .div4{
+    background-color: yellow;
+}
+.ab{
+    width: 10px;
+    border: 3px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+.bc{
+    border: 2px solid black;
+    margin-top: -5px;
+}
+.cd{
+    border: 2px solid black;
+    margin-top: 3px;
+}
+#ab{
+    width: 100px;
+    border: 2px solid black;
+    margin-top: 20px;
+    display: none;
+    border-radius: 10px;
+    color: aqua;
+    background-color: black;
+    font-style: italic;
+}
+.ab:active ~ #ab{
+    display: block;
+}
+
+
+
+    </style>
+</head>
+<body>
+  
+    <div class="ab">
+        <div class="bc"></div>
+            <div class="cd" >
+                
+            </div>
+        </div>
+        <div id="ab">
+            <h1>details</h1>
+            <p>name</p>
+            <p>number</p>
+            <p>contact_us</p>
+
+
+
+            
+        </div>
+   
+</body>
+</html>
